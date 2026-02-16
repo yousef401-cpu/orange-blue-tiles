@@ -14,9 +14,9 @@ const Header = () => {
           </div>
           <div>
             <span className="text-section-dark-foreground font-bold text-lg leading-tight block" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.05em" }}>
-              Yousef Tile
+              Yousef Tiles Ceramics
             </span>
-            <span className="text-muted-foreground text-xs tracking-widest uppercase">Ceramic Installation</span>
+            <span className="text-muted-foreground text-xs tracking-widest uppercase">Hamilton, Ontario</span>
           </div>
         </a>
 
@@ -30,9 +30,11 @@ const Header = () => {
               {item}
             </a>
           ))}
-          <Button variant="hero" size="sm">
-            <Phone className="w-4 h-4" />
-            Call Now
+          <Button variant="hero" size="sm" asChild>
+            <a href="tel:+19058700038">
+              <Phone className="w-4 h-4" />
+              (905) 870-0038
+            </a>
           </Button>
         </nav>
 
@@ -56,9 +58,11 @@ const Header = () => {
               {item}
             </a>
           ))}
-          <Button variant="hero" size="sm" className="mt-2 w-full">
-            <Phone className="w-4 h-4" />
-            Call Now
+          <Button variant="hero" size="sm" className="mt-2 w-full" asChild>
+            <a href="tel:+19058700038">
+              <Phone className="w-4 h-4" />
+              (905) 870-0038
+            </a>
           </Button>
         </div>
       )}

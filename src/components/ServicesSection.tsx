@@ -1,12 +1,12 @@
-import { Bath, ChefHat, Layers, Hammer, Paintbrush, Ruler } from "lucide-react";
+import { Bath, ShowerHead, Layers, Hammer, Home, Wrench } from "lucide-react";
 
 const services = [
-  { icon: Bath, title: "Bathroom Tiling", desc: "Complete bathroom renovations with waterproof tile solutions." },
-  { icon: ChefHat, title: "Kitchen Backsplash", desc: "Stunning backsplash designs to elevate your kitchen." },
-  { icon: Layers, title: "Floor Installation", desc: "Durable and beautiful floor tile for any room." },
-  { icon: Hammer, title: "Tile Repair", desc: "Quick and reliable cracked or damaged tile repairs." },
-  { icon: Paintbrush, title: "Custom Mosaic", desc: "Unique mosaic designs tailored to your vision." },
-  { icon: Ruler, title: "Outdoor Tile", desc: "Weather-resistant tile for patios and outdoor spaces." },
+  { icon: Bath, title: "Full Bathroom Renovations", desc: "Complete bathroom remodels from start to finish, including plumbing, tiling, and fixtures." },
+  { icon: ShowerHead, title: "Shower & Tub Installation", desc: "Professional shower and tub installations with waterproof tiling solutions." },
+  { icon: Layers, title: "Ceramic & Porcelain Tiling", desc: "Expert installation of ceramic and porcelain tiles for walls and floors." },
+  { icon: Home, title: "Flooring Installation", desc: "Hardwood, vinyl, and tile flooring installed with precision and care." },
+  { icon: Hammer, title: "Vanity Installation", desc: "Custom vanity installations to upgrade your bathroom's look and function." },
+  { icon: Wrench, title: "General Home Repairs", desc: "Reliable home repair services to keep your space in top shape." },
 ];
 
 const ServicesSection = () => {
