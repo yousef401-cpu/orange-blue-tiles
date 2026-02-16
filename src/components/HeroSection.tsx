@@ -15,7 +15,7 @@ const HeroSection = () => {
         <div className="max-w-3xl">
           <div className="inline-block bg-primary/20 border border-primary/40 rounded-full px-4 py-1.5 mb-6 animate-fade-up">
             <span className="text-primary text-sm font-semibold uppercase tracking-widest">
-              Expert Tile Installation
+              Hamilton, Ontario — Professional Tiling & Renovation
             </span>
           </div>
 
@@ -23,25 +23,27 @@ const HeroSection = () => {
             className="text-5xl md:text-7xl lg:text-8xl text-section-dark-foreground leading-[0.95] mb-6 animate-fade-up"
             style={{ animationDelay: "0.1s" }}
           >
-            Premium Ceramic
+            Yousef Tiles
             <br />
-            <span className="text-primary">& Tile Work</span>
+            <span className="text-primary">Ceramics</span>
           </h1>
 
           <p
             className="text-section-dark-foreground/70 text-lg md:text-xl max-w-lg mb-8 animate-fade-up"
             style={{ animationDelay: "0.2s" }}
           >
-            Transform your space with precision tile installation. Bathrooms, kitchens, floors — crafted to perfection by Yousef Tile.
+            Professional tiling, flooring, and full bathroom renovations in Hamilton, Ontario. High-quality, reliable, and clean work — every time.
           </p>
 
           <div
             className="flex flex-col sm:flex-row gap-4 animate-fade-up"
             style={{ animationDelay: "0.3s" }}
           >
-            <Button variant="hero" size="lg">
-              Get Free Estimate
-              <ArrowRight className="w-5 h-5" />
+            <Button variant="hero" size="lg" asChild>
+              <a href="tel:+19058700038">
+                Call (905) 870-0038
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </Button>
             <Button variant="heroOutline" size="lg">
               View Our Work
@@ -53,9 +55,9 @@ const HeroSection = () => {
             style={{ animationDelay: "0.4s" }}
           >
             {[
-              { num: "15+", label: "Years Experience" },
-              { num: "500+", label: "Projects Done" },
-              { num: "100%", label: "Satisfaction" },
+              { num: "3+", label: "Years Experience" },
+              { num: "✓", label: "On Schedule" },
+              { num: "5★", label: "HomeStars" },
             ].map(({ num, label }) => (
               <div key={label}>
                 <div className="text-3xl md:text-4xl text-primary font-bold" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>

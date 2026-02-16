@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, MapPin, Facebook } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -12,21 +12,21 @@ const ContactSection = () => {
               Ready to Start<br />Your Project?
             </h2>
             <p className="text-section-dark-foreground/60 mb-10 max-w-md">
-              Contact us today for a free estimate. We'll work with you to bring your vision to life with expert tile craftsmanship.
+              Serving Hamilton, Ontario and surrounding areas. Contact us today for a free estimate — reliable, on-schedule service you can count on.
             </p>
 
             <div className="space-y-6">
               {[
-                { icon: Phone, label: "(555) 123-4567" },
-                { icon: Mail, label: "info@youseftile.com" },
-                { icon: MapPin, label: "Serving the Greater Metro Area" },
-              ].map(({ icon: Icon, label }) => (
-                <div key={label} className="flex items-center gap-4">
+                { icon: Phone, label: "+1 (905) 870-0038", href: "tel:+19058700038" },
+                { icon: Facebook, label: "Find Us on Facebook", href: "https://www.facebook.com/" },
+                { icon: MapPin, label: "Hamilton, Ontario, Canada" },
+              ].map(({ icon: Icon, label, href }) => (
+                <a key={label} href={href || "#"} target={href?.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="flex items-center gap-4 group">
                   <div className="w-12 h-12 rounded-lg bg-primary/15 flex items-center justify-center">
                     <Icon className="w-5 h-5 text-primary" />
                   </div>
-                  <span className="text-section-dark-foreground/80">{label}</span>
-                </div>
+                  <span className="text-section-dark-foreground/80 group-hover:text-primary transition-colors">{label}</span>
+                </a>
               ))}
             </div>
           </div>
@@ -53,12 +53,12 @@ const ContactSection = () => {
               />
               <select className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring">
                 <option value="">Select Service</option>
-                <option>Bathroom Tiling</option>
-                <option>Kitchen Backsplash</option>
-                <option>Floor Installation</option>
-                <option>Tile Repair</option>
-                <option>Custom Mosaic</option>
-                <option>Outdoor Tile</option>
+                <option>Full Bathroom Renovation</option>
+                <option>Shower/Tub Installation</option>
+                <option>Ceramic & Porcelain Tiling</option>
+                <option>Flooring (Hardwood/Vinyl)</option>
+                <option>Vanity Installation</option>
+                <option>General Home Repairs</option>
               </select>
               <textarea
                 placeholder="Tell us about your project"
