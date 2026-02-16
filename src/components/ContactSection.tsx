@@ -31,44 +31,19 @@ const ContactSection = () => {
             </div>
           </div>
 
-          <div className="bg-card rounded-lg p-8">
-            <h3 className="text-2xl text-card-foreground mb-6" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
-              Free Estimate
+          <div className="bg-card rounded-lg p-8 flex flex-col items-center justify-center text-center">
+            <Phone className="w-16 h-16 text-primary mb-6" />
+            <h3 className="text-3xl text-card-foreground mb-4" style={{ fontFamily: "'Bebas Neue', sans-serif" }}>
+              Call for a Free Estimate
             </h3>
-            <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-              />
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-              />
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring"
-              />
-              <select className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-ring">
-                <option value="">Select Service</option>
-                <option>Full Bathroom Renovation</option>
-                <option>Shower/Tub Installation</option>
-                <option>Ceramic & Porcelain Tiling</option>
-                <option>Flooring (Hardwood/Vinyl)</option>
-                <option>Vanity Installation</option>
-                <option>General Home Repairs</option>
-              </select>
-              <textarea
-                placeholder="Tell us about your project"
-                rows={4}
-                className="w-full px-4 py-3 rounded-md border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring resize-none"
-              />
-              <Button variant="hero" size="lg" className="w-full">
-                Request Estimate
-              </Button>
-            </form>
+            <p className="text-muted-foreground mb-8 max-w-sm">
+              Speak directly with us about your project. We'll provide a free, no-obligation estimate.
+            </p>
+            <Button variant="hero" size="lg" asChild>
+              <a href="tel:+19058700038">
+                Call (905) 870-0038
+              </a>
+            </Button>
           </div>
         </div>
       </div>
