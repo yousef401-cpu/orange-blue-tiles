@@ -55,7 +55,7 @@ const HeroSection = () => {
             style={{ animationDelay: "0.4s" }}
           >
             {[
-              { num: "3+", label: "Years Experience" },
+              { num: "20+", label: "Years Experience" },
               { num: "✓", label: "On Schedule" },
               { num: "5★", label: "HomeStars" },
             ].map(({ num, label }) => (
